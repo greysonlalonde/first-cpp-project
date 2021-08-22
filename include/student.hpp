@@ -1,5 +1,7 @@
 #include <iostream>
+
 #include <string>
+
 #include <map>
 
 class Student {
@@ -10,9 +12,9 @@ class Student {
     std::string classStanding;
     float cumulativeGPA;
     bool isActive;
-    std::map<std::string, char> completedCourses;
+    std::map < std::string, char > completedCourses;
 public:
-    Student(std::string newFirst, std::string newLast, int newNumber, std::string newAddress, float newGPA, std::string newStanding= "Freshman", bool newActive= true);
+    Student(std::string newFirst, std::string newLast, int newNumber, std::string newAddress, float newGPA, std::string newStanding = "Freshman", bool newActive = true);
     ~Student();
     void set_name(std::string newFirst, std::string newLast);
     std::string get_name();
@@ -25,8 +27,8 @@ private:
     int get_phone();
     void set_address(std::string newAddress);
     std::string get_address();
-    void add_courses(std::map<std::string, char> newCourses);
-    std::map<std::string, char> get_courses();
+    void add_courses(std::map < std::string, char > newCourses);
+    std::map < std::string, char > get_courses();
     void set_gpa(float newCredits, char newGPA);
     float get_gpa();
 };
