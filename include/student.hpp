@@ -4,7 +4,9 @@
 
 #include <map>
 
-class Student {
+#include "institution.hpp"
+
+class Student: public Institution {
     std::string firstName;
     std::string lastName;
     std::string homeAddress;
@@ -32,3 +34,5 @@ private:
     void set_gpa(float newCredits, char newGPA);
     float get_gpa();
 };
+
+
